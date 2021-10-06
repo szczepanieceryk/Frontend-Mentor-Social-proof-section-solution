@@ -1,0 +1,20 @@
+.rates-wrapper{
+    margin: 30px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    .rates-component{
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 6px;
+        background-color:  hsl(300, 24%, 96%);
+        .rated{
+            display: block;
+            font-weight: 700;
+            color:  hsl(300, 43%, 22%);
+        }
+        .start-icon{
+            margin:3px 5px;
+        }
+    }
+    
+}

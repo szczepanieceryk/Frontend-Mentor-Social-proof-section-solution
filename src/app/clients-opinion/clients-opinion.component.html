@@ -1,0 +1,16 @@
+<div class="clients-opinion-wrapper">
+  <div *ngFor="let client of clientsData " class="clients-opinion-component">
+    <img class="client-image" src="{{client.image}}" alt="client thumbnail">
+    <span class="clients-name">
+      {{client.name}}
+      <br>
+      <small class="verified">
+        Verified Buyer
+      </small>
+    </span>
+
+    <span class="clients-opinion">
+      {{client.opinion}}
+    </span>
+  </div>
+</div>
