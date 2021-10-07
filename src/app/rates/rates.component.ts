@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 export class RatesComponent  {
 
+  // content for rates component to loop in ngFor
  clientsRates:Array<any> = [
    {
      rate: 'Rated 5 Stars in Reviews',

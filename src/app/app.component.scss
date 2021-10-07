@@ -1,0 +1,17 @@
+.app-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and(min-width:1025px){
+    .app-wrapper{
+       padding: 80px 40px 80px;
+    }
+}
+
+@media screen and(min-width:1201px){
+    .app-wrapper{
+       padding: 100px;
+       justify-content: center;
+    }
+}

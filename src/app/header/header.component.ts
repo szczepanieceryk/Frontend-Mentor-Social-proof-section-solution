@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+// content for header interpolation  
 headerContent:Array<any> = [
   {
     title:'10,000+ of our users love our products.',

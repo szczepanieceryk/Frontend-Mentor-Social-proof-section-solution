@@ -9,3 +9,15 @@ body{
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
 }
+.attribution{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and(min-width:1025px){
+    .attribution{
+       
+        padding: 100px 0 15px;
+    }
+}

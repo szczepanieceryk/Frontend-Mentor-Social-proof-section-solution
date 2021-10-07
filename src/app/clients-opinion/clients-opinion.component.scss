@@ -1,8 +1,12 @@
 .clients-opinion-wrapper{
-    margin: 20px auto 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto 40px;
+    justify-content: center;
     .clients-opinion-component{
-        margin-bottom: 15px;
-        padding: 25px;
+        margin:10px auto 15px;
+        padding: 30px;
+        max-width: 350px;
         display: flex;
         flex-wrap: wrap;
         border-radius: 6px;
@@ -21,5 +25,19 @@
             padding-top: 15px;
             color:  hsl(300, 1%, 83%);
         }
+    }
+}
+@media screen and(min-width:1025px){
+    .clients-opinion-wrapper{
+        padding-top: 40px;
+        .clients-opinion-component{
+            flex-basis: 30%;
+        }
+       .first{
+           transform: translateY(-25px);
+       }
+       .last{
+        transform: translateY(25px);
+    }
     }
 }

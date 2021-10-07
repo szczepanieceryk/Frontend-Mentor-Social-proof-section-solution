@@ -1,13 +1,22 @@
 .rates-wrapper{
+    display: flex;
+    flex-wrap: wrap;
     margin: 30px auto;
+    justify-content: center;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     .rates-component{
         margin: 10px auto;
         padding: 10px;
+        max-width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-basis: 100%;
         border-radius: 6px;
         background-color:  hsl(300, 24%, 96%);
         .rated{
+            flex-basis: 100%;
             display: block;
             font-weight: 700;
             color:  hsl(300, 43%, 22%);
@@ -16,5 +25,34 @@
             margin:3px 5px;
         }
     }
-    
+}
+
+@media screen and(min-width:1025px){
+    .rates-wrapper{
+        margin: 0;
+        max-width: 450px;
+        justify-content: flex-end;
+        .rates-component{
+            justify-content: flex-start;
+            max-width: 420px;
+            
+            .rated{
+                flex-basis: 60%;
+            }
+    }
+    .first{
+        transform: translateX(-35px);
+    }
+    .last{
+        transform: translateX(35px);
+    }
+    }
+}
+@media screen and(min-width:1201px){
+    .rates-wrapper{
+        max-width: 550px;
+        .rates-component{
+                max-width: 500px;
+    }
+}
 }

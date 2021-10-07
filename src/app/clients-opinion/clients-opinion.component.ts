@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsOpinionComponent implements OnInit {
 
+
+// data for clients component to loop in ngFor  
 clientsData:Array<any> = [
   {
     image:'../../assets/images/image-colton.jpg',

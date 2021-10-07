@@ -1,5 +1,6 @@
 <div class="clients-opinion-wrapper">
-  <div *ngFor="let client of clientsData " class="clients-opinion-component">
+  <div *ngFor="let client of clientsData; let first = first, let last = last" [ngClass]="{first:first, last:last}"
+    class="clients-opinion-component">
     <img class="client-image" src="{{client.image}}" alt="client thumbnail">
     <span class="clients-name">
       {{client.name}}
