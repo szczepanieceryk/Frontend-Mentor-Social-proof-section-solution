@@ -1,8 +1,11 @@
+@import '../../custom';
+
 .clients-opinion-wrapper{
+    margin: 20px auto 40px;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px auto 40px;
     justify-content: center;
+    font-family: 'Spartan';
     .clients-opinion-component{
         margin:10px auto 15px;
         padding: 30px;
@@ -11,19 +14,19 @@
         flex-wrap: wrap;
         border-radius: 6px;
         color: hsl(0, 0%, 100%);
-        background-color: hsl(300, 43%, 22%);
+        background-color: $clients-bgc;
         .client-image{
             margin-right: 15px;
             height:40px;
             border-radius: 50%;
         }
         .verified{
-          color: hsl(333, 80%, 67%);
+          color: $clients-verified;
         }
         .clients-opinion{
             line-height: 1.3;
             padding-top: 15px;
-            color:  hsl(300, 1%, 83%);
+            color:  $clients-txt;
         }
     }
 }
